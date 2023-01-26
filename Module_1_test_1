@@ -1,0 +1,17 @@
+import org.junit.Test;
+
+public class MainClass
+{
+    @Test
+    public void myNewTest ()
+    {
+        int a = getLocalNumber();
+        System.out.println(a);
+    }
+
+    public int getLocalNumber()
+    {
+        return 14;
+    }
+
+}
