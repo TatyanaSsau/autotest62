@@ -1,0 +1,30 @@
+import org.junit.Assert;
+import org.junit.Test;
+
+public class MainClassTest
+{
+    @Test
+    public void testGetClassString()
+    {
+        String word = class_string();
+
+        String match1 = "Hello";
+        String match2 = "hello";
+
+        Boolean result1 = word.contains(match1);
+        Boolean result2 = word.contains(match2);
+
+        if ((result1 == false) & (result2 == false))
+        {
+            Assert.fail("Lost some words!");
+
+        } else {
+            System.out.println("Perfect!!");
+        }
+
+    }
+    public String class_string()
+    {
+        return "Hello, world";
+    }
+}
