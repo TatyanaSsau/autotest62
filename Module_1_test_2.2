@@ -1,0 +1,20 @@
+import org.junit.Test;
+
+public class MainClassTest
+{
+    @Test
+    public void testGetClassNumber()
+    {
+        int a = getClassNumber();
+
+        if (a > 45) {
+            System.out.println("perfect");
+        } else {
+            System.out.println("not enough" + getClassNumber() + "must be more than 45");
+        }
+    }
+    public int getClassNumber()
+    {
+        return 20;
+    }
+}
